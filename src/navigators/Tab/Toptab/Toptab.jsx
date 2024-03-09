@@ -12,7 +12,7 @@ const Toptab = () => {
     const Tab = createMaterialTopTabNavigator();
     return (
         <Tab.Navigator screenOptions={({ route }) => ({
-            tabBarLabelStyle: { ...FONTS.body4b, textTransform: "none" },
+            tabBarLabelStyle: { ...FONTS.body5, textTransform: "none" },
             tabBarIndicatorStyle: { backgroundColor: COLORS.black, height: SIZES.height * 0.003, width: SIZES.width * 0.15 },
             tabBarStyle: { backgroundColor: COLORS.white, elevation: 0, marginTop: SIZES.h3 },
 

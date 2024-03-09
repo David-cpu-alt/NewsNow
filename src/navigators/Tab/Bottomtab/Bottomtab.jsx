@@ -36,8 +36,12 @@ const Bottomtab = () => {
                 width: SIZES.width,
                 elevation: 0, // Add this line to remove elevation
             },
+
             headerShown: false,
-            // tabBarInactiveTintColor: COLORS.black
+
+
+
+
         })}>
             <Tab.Screen name="Home" component={Home} />
             <Tab.Screen name="Discover" component={Discover} />
