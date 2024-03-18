@@ -7,6 +7,9 @@ const tunde = require("../../assets/images/tunde.jpg")
 const bitcoin = require("../../assets/images/bitcoin.jpg")
 const goggle = require("../../assets/images/goggle.jpg")
 const american = require("../../assets/images/american.jpeg")
+const smile = require("../../assets/images/smile.jpeg")
+const lit = require("../../assets/images/lit.jpeg")
+const hema = require("../../assets/images/hema.jpeg")
 
 export default {
     news,
@@ -16,5 +19,8 @@ export default {
     tunde,
     bitcoin,
     goggle,
-    american
+    american,
+    smile,
+    lit,
+    hema
 }

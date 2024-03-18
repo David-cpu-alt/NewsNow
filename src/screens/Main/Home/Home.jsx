@@ -3,6 +3,8 @@ import React from 'react'
 import Toptab from '../../../navigators/Tab/Toptab/Toptab'
 import { SIZES, images, icons, COLORS } from '../../../constants'
 import { ImageSlider } from 'react-native-image-slider-banner'
+import { gettopheadlines } from '../../../api/auth'
+import { useNavigation } from '@react-navigation/native'
 
 
 
@@ -11,6 +13,10 @@ import { ImageSlider } from 'react-native-image-slider-banner'
 
 
 const Home = () => {
+
+    const navigation = useNavigation();
+    //API call 
+
 
     return (
         <View style={styles.container}>
