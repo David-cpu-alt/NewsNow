@@ -14,7 +14,7 @@ const Foryou = () => {
 
     const handleNews = async () => {
         try {
-            const cool = await gettopheadlines()
+            const cool = await gettopheadlines(5)
             // promise returned 
             console.log('object', cool)
             // console.log('data fetced', cool?.articles)

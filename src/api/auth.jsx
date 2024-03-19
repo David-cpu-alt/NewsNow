@@ -22,7 +22,7 @@ const makeApiRequest = async (method, endpoint, data) => {
 };
 
 export const gettopheadlines = async () => {
-    const response = await makeApiRequest("GET", "v2/top-headlines?country=ng&apiKey=f2ec670dc6e242d9b034202acfde7407")
+    const response = await makeApiRequest("GET", 'v2/top-headlines?country=ng&apiKey=f2ec670dc6e242d9b034202acfde7407&pageSize=5')
 
 
     return response;
