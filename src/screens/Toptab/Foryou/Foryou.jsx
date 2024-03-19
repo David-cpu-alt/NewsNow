@@ -22,7 +22,7 @@ const Foryou = () => {
             if (cool?.status === 'ok') {
                 let data = cool?.articles
                 setNewsContent(data)
-                // navigation.navigate("newsscreen", { data })
+
             }
 
         } catch (error) {
