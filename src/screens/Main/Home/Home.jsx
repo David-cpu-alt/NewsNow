@@ -5,6 +5,7 @@ import { SIZES, images, icons, COLORS } from '../../../constants'
 import { ImageSlider } from 'react-native-image-slider-banner'
 import { gettopheadlines } from '../../../api/auth'
 import { useNavigation } from '@react-navigation/native'
+import Carousel from '../../../components/carousel/Carousel'
 
 
 
@@ -26,9 +27,11 @@ const Home = () => {
                 <Image source={icons.search} style={{ height: SIZES.h3, width: SIZES.h3, marginRight: SIZES.h5 }} />
                 <Image source={images.circle} style={{ height: SIZES.h1 * 1.2, width: SIZES.h1 * 1.2 }} />
             </View>
-            {/* carousel */}
-            <View style={{ marginTop: SIZES.h3 * 0.9 }}>
-                <ImageSlider
+            <Carousel />
+
+
+            {/* <View style={{ marginTop: SIZES.h3 * 0.9 }}> */}
+            {/* <ImageSlider
                     data={[
                         { img: "https://media.istockphoto.com/id/1470927624/photo/long-exposure-of-the-business-bay-dubai-city-skyline-at-twilight-united-arab-emirates.webp?b=1&s=170667a&w=0&k=20&c=GGz2DLh5DJOiNdKrp0aXYN99imsif22IRhaOmgRpUrI=" },
                         { img: "https://media.istockphoto.com/id/1312550959/photo/the-city-of-london-skyline-at-night-united-kingdom.jpg?s=612x612&w=0&k=20&c=Ro-QI9Khk3I9ILVW4hBc26NEmIViFRGveaqVuvWeVJs=" },
@@ -63,7 +66,7 @@ const Home = () => {
                     indicatorContainerStyle={{ top: SIZES.base }}
 
                 />
-            </View>
+            </View> */}
 
             <Toptab />
 

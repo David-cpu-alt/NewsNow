@@ -1,7 +1,7 @@
 import axios from "axios";
 import client from "./client";
 
-const apiKey = ''
+
 
 const makeApiRequest = async (method, endpoint, data) => {
     try {
