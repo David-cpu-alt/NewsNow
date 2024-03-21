@@ -3,11 +3,14 @@ import React, { useState } from 'react'
 import { SIZES, images } from '../../constants'
 import { SCREEN_WIDTH } from '../../constants/theme'
 import { useNavigation } from '@react-navigation/native'
+import { FONTS } from '../../constants/theme'
 const Carousel = () => {
     const carouselData = [
         {
             id: "1",
-            img: images.stella
+            img: images.stella,
+            topic: "Us stops scientific co-",
+            topic2: "operation with Israel in west Bank"
         },
         {
             id: 2,
@@ -56,15 +59,19 @@ const Carousel = () => {
                         <TouchableOpacity onPress={() => navigation.navigate("newsscreen", { item })}>
                             <View style={{ alignItems: "center", marginTop: SIZES.h5 }}>
                                 <ImageBackground source={item.img}
-                                    style={{ height: SIZES.height * 0.28, width: SIZES.width, resizeMode: "contain" }} >
-                                    <Text> David</Text>
+                                    style={{ height: SIZES.height * 0.28, width: SIZES.width, resizeMode: "contain", paddingHorizontal: SIZES.h2 }} >
+                                    <View style={{ marginTop: SIZES.h3 * 3.8 }}>
+                                        <Text style={{ ...FONTS.body2 }}>{item.topic} </Text>
+                                        <Text style={{ ...FONTS.body2, }}>{item.topic2}</Text>
+                                    </View>
+
                                 </ImageBackground>
                             </View>
                         </TouchableOpacity>
                     )
                 }} />
 
-            <View style={{ flexDirection: "row", justifyContent: "center", marginTop: SIZES.h3 }}>
+            <View style={{ flexDirection: "row", justifyContent: "center", bottom: SIZES.h3 }}>
                 {_renderDotIndicator()}
             </View>
 
